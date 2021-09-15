@@ -1,0 +1,442 @@
+@import url("https://fonts.googleapis.com/css2?family=Arimo&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Arimo", sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: white;
+  background-color: rgb(0, 0, 0);
+  text-align: center;
+}
+lord-icon {
+  position: absolute;
+}
+.container {
+  width: 100%;
+}
+.frontpage {
+  background: url(/images/home.jpg);
+  height: 135vh;
+  width: 100%;
+  object-fit: contain;
+}
+.front-container {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+.header {
+  padding-top: 20px;
+  height: 64px;
+  width: 90%;
+  display: flex;
+  margin: 0 auto;
+  padding-bottom: 16px;
+  justify-content: space-between;
+}
+.logo-img {
+}
+.sign {
+  height: 64px;
+  line-height: 64px;
+}
+.sign a {
+  margin-top: 0.5rem;
+  padding: 7px 17px;
+  background-color: #e50914;
+  width: 50px;
+  height: 20px;
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.2rem;
+  border-radius: 5px;
+}
+.front {
+  width: 100%;
+  height: calc(135vh - 100px);
+}
+.front-content {
+  position: absolute;
+  top: 35%;
+  width: 50%;
+  margin: 0 25%;
+}
+.front-content > h1,
+.front-content > h3 {
+  width: 630px;
+}
+h1 {
+  font-size: 4rem;
+  font-weight: 900;
+}
+.front-content h3,
+.show-details h3 {
+  margin: 16px 0;
+  font-size: 2rem;
+  font-weight: 500;
+}
+.front-content form {
+  position: absolute;
+  left: -10%;
+  width: 120%;
+}
+form p {
+  font-size: 1.5rem;
+  width: 100%;
+}
+form .input-container {
+  display: flex;
+}
+form .email-input {
+  width: 550px;
+  height: 90px;
+  margin: 10px 0;
+  display: grid;
+}
+form .email-input input {
+  width: 100%;
+  height: 70px;
+  font-weight: 400;
+  font-size: 1.2rem;
+  padding-left: 10px;
+}
+small {
+  text-transform: capitalize;
+  padding: 5px;
+  text-align: left;
+  color: rgb(255, 208, 0);
+  font-size: 1.2rem;
+  visibility: hidden;
+}
+.erro {
+  visibility: visible;
+}
+form button {
+  margin: 10px 0;
+  height: 70px;
+  width: 240px;
+  background-color: #e50914;
+  color: white;
+  font-weight: 500;
+  border: none;
+  font-size: 1.9rem;
+  padding: 10px;
+  cursor: pointer;
+  margin-left: 12px;
+}
+.clear {
+  width: 100%;
+  height: 10px;
+  clear: both;
+  background-color: #333;
+}
+.show {
+  display: flex;
+  padding: 80px 30px;
+  height: 60vh;
+  width: 95%;
+  margin: 0 auto;
+}
+.show-details {
+  width: 50%;
+  text-align: left;
+  padding: 20px 30px;
+}
+.show-details h3 {
+  font-weight: 500;
+  margin-top: 20px;
+}
+.show-image {
+  width: 50%;
+  height: 100%;
+  object-fit: cover;
+  margin-left: 25px;
+}
+.tv-image {
+  background: url(/images/tv.jpg);
+  background-repeat: no-repeat;
+}
+.mobile-image {
+  background: url(/images/mob.jpg);
+  background-repeat: no-repeat;
+}
+.kid-image {
+  background: url(/images/kids.png);
+  background-repeat: no-repeat;
+}
+.faq-container {
+  position: relative;
+  width: 95%;
+  margin: 70px auto;
+  text-align: center;
+}
+.faq-content {
+  display: grid;
+  width: 100%;
+}
+.faq-title {
+  margin: 8px auto;
+  width: 85%;
+}
+.faq-questions {
+  width: 90%;
+  margin-bottom: 20px;
+}
+.faq-list {
+  list-style: none;
+  width: 75%;
+  margin: 52px auto;
+}
+.faq-list li {
+  width: 100%;
+  margin-left: 8%;
+  min-height: 40px;
+  margin-bottom: 8px;
+  text-align: left;
+  font-size: 1.95rem;
+  background-color: #333;
+}
+.faq {
+  width: 100%;
+  height: 80px;
+  line-height: 40px;
+  border: none;
+  border-bottom: 1px solid black;
+  background-color: #333;
+  color: white;
+  font-size: 1.95rem;
+  font-family: "Arimo", sans-serif;
+  cursor: pointer;
+  padding: 20px 30px;
+  display: flex;
+  justify-content: space-between;
+}
+.answer {
+  margin: 0;
+  padding: 31px;
+  height: fit-content;
+  line-height: 40px;
+  display: none;
+}
+.open {
+  display: block;
+}
+.footer {
+  width: 100%;
+  text-transform: capitalize;
+  font-size: 1.2rem;
+  color: #757575;
+  text-align: left;
+}
+.footer a {
+  text-decoration: none;
+  color: #757575;
+}
+.footer a:hover {
+  text-decoration: underline;
+}
+.footer-container {
+  padding: 45px;
+  padding-top: 70px;
+}
+.footer-content {
+  width: 90%;
+  margin: 0px 5%;
+  display: grid;
+}
+.que {
+  width: 90%;
+  height: 20px;
+  margin-bottom: 30px;
+}
+.links-list {
+  list-style: none;
+  width: 100%;
+}
+.link {
+  box-sizing: border-box;
+  padding: 0;
+  margin-bottom: 16px;
+  display: inline-block;
+  width: 220px;
+  padding-right: 12px;
+  vertical-align: top;
+  margin-right: 10px;
+}
+.ng {
+  margin: 30px 10px;
+}
+@media screen and (max-width: 1170px) {
+  .front {
+    margin-left: -50px;
+    width: 100%;
+  }
+  form .input-container {
+    display: grid;
+  }
+  form .email-input {
+    text-align: center;
+    width: 110%;
+  }
+  form button {
+    margin-left: 33%;
+    width: 180px;
+    height: 50px;
+    font-size: 1.4rem;
+  }
+  .front-content > h1,
+  .front-content > h3 {
+    margin-left: -30px;
+  }
+  @media screen and (max-width: 800px) {
+    .front-content > h1,
+    .front-content > h3 {
+      margin-left: -10px;
+      max-width: 500px;
+    }
+    form .email-input {
+      width: 120%;
+    }
+  }
+  .show {
+    display: grid;
+    align-items: center;
+    width: 80%;
+    padding: 20px 5%;
+    margin: 0;
+    margin-bottom: 20px;
+    height: fit-content;
+  }
+  .show-details {
+    width: 100%;
+    text-align: center;
+  }
+  .show-details h1 {
+    font-size: 3rem;
+  }
+  .show-details h3 {
+    font-size: 1.5rem;
+  }
+  .show-image {
+    width: 80%;
+    margin: 30px auto;
+    height: 450px;
+  }
+  .faq-container {
+    width: 90%;
+  }
+  .faq-list {
+    width: 100%;
+  }
+  .faq-list li {
+    font-size: 1.6rem;
+  }
+  .faq {
+    height: 70px;
+    padding: 15px 30px;
+    line-height: 40px;
+  }
+}
+@media screen and (max-width: 670px) {
+  .frontpage {
+    min-height: 100vh;
+  }
+  .front {
+    width: 100%;
+    margin: 0;
+  }
+  .front-content {
+    top: 20%;
+    left: 0;
+    width: 90%;
+    margin: 0;
+    padding: 50px 5%;
+  }
+  .front-content > h1 {
+    width: 90%;
+    text-align: center;
+    align-items: center;
+    font-size: 2rem;
+    margin-left: 5%;
+  }
+  .front-content > h3 {
+    width: 90%;
+    text-align: center;
+    align-items: center;
+    font-size: 1.6rem;
+    margin-left: 5%;
+  }
+  .front-content form {
+    left: 0;
+    width: 90%;
+    margin-left: 5%;
+  }
+  form p {
+    font-size: 1.4rem;
+    width: 70%;
+    margin-left: 15%;
+  }
+  form .email-input {
+    width: 100%;
+    height: 70px;
+  }
+  form .email-input input {
+    width: 97%;
+    height: 50px;
+  }
+  .show {
+    width: 90%;
+    margin: 10px 00;
+    padding: 20px;
+    min-height: 100vh;
+  }
+  .show-details {
+    width: 100%;
+    padding: 0;
+    margin: 10px 0;
+  }
+  .show-image {
+    width: 95%;
+    height: 370px;
+    margin: 10px 0;
+  }
+  .faq-container {
+    width: 100%;
+    margin: 50px 0;
+    padding: 0;
+  }
+  .faq-title h1 {
+    width: 100%;
+    font-size: 2rem;
+  }
+  .faq-questions {
+    width: 100%;
+    margin: 0;
+  }
+  .faq-list {
+    width: 100%;
+    margin: 10px 0;
+  }
+  .faq-list li {
+    width: 100%;
+    margin: 0;
+    margin-bottom: 8px;
+    font-size: 1.2rem;
+  }
+  .faq {
+    width: 100%;
+    height: 60px;
+    line-height: 30px;
+    padding: 20px 15px;
+    font-size: 1.6rem;
+  }
+  .link {
+    width: 160px;
+  }
+}
