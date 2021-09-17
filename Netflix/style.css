@@ -63,9 +63,9 @@ lord-icon {
 }
 .front-content {
   position: absolute;
-  top: 35%;
-  width: 50%;
-  margin: 0 25%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .front-content > h1,
 .front-content > h3 {
@@ -84,7 +84,7 @@ h1 {
 .front-content form {
   position: absolute;
   left: -10%;
-  width: 120%;
+  right: -10%;
 }
 form p {
   font-size: 1.5rem;
@@ -155,20 +155,19 @@ form button {
 .show-image {
   width: 50%;
   height: 100%;
-  object-fit: cover;
   margin-left: 25px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 .tv-image {
-  background: url(/images/tv.jpg);
-  background-repeat: no-repeat;
+  background-image: url(/images/tv.jpg);
 }
 .mobile-image {
-  background: url(/images/mob.jpg);
-  background-repeat: no-repeat;
+  background-image: url(/images/mob.jpg);
 }
 .kid-image {
-  background: url(/images/kids.png);
-  background-repeat: no-repeat;
+  background-image: url(/images/kids.png);
 }
 .faq-container {
   position: relative;
@@ -274,34 +273,35 @@ form button {
 }
 @media screen and (max-width: 1170px) {
   .front {
-    margin-left: -50px;
     width: 100%;
+  }
+  .front-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
   form .input-container {
     display: grid;
+    align-items: center;
   }
   form .email-input {
     text-align: center;
-    width: 110%;
+    width: 100%;
   }
   form button {
-    margin-left: 33%;
     width: 180px;
     height: 50px;
     font-size: 1.4rem;
-  }
-  .front-content > h1,
-  .front-content > h3 {
-    margin-left: -30px;
+    margin-left: 40%;
   }
   @media screen and (max-width: 800px) {
     .front-content > h1,
     .front-content > h3 {
-      margin-left: -10px;
       max-width: 500px;
     }
     form .email-input {
-      width: 120%;
+      width: 100%;
     }
   }
   .show {
@@ -352,18 +352,12 @@ form button {
     margin: 0;
   }
   .front-content {
-    top: 20%;
-    left: 0;
+    top: 40%;
     width: 90%;
-    margin: 0;
-    padding: 50px 5%;
   }
   .front-content > h1 {
     width: 90%;
-    text-align: center;
-    align-items: center;
     font-size: 2rem;
-    margin-left: 5%;
   }
   .front-content > h3 {
     width: 90%;
@@ -389,6 +383,9 @@ form button {
   form .email-input input {
     width: 97%;
     height: 50px;
+  }
+  form button {
+    margin-left: 25%;
   }
   .show {
     width: 90%;
